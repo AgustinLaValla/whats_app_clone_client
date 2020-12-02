@@ -11,7 +11,7 @@ export const validate = (values: FormikValues) => {
   let errors: any = {}
   if (!values.email) {
     errors.email = 'Email is required'
-  } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(values.email)) {
+  } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(values.email)) {
     errors.email = 'Invalid email format'
   }
 

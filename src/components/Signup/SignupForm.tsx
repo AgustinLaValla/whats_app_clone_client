@@ -96,7 +96,7 @@ export default function SignupForm (): JSX.Element {
           Login
         </Button>
         <Link to="/login" className='login_link'>
-          <a >Already have an account? Click to Login</a>
+          <span >Already have an account? Click to Login</span>
         </Link>
       </form>
     </Paper>

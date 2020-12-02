@@ -77,7 +77,7 @@ export default function LoginForm (): JSX.Element {
           Login
         </Button>
         <Link to="/signup" className='login_link'>
-          <a >Don't you have an account? Click to Register</a>
+          <span >Don't you have an account? Click to Register</span>
         </Link>
       </form>
     </Paper>
