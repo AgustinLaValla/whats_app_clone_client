@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import Dashboard from './components/Dashboard/Dashboard'
 import Login from './components/Login/Login'
 import Signup from './components/Signup/Signup'
@@ -17,6 +17,7 @@ function App () {
         <Route exact={true} path='/' component={Dashboard} />
         <Route exact={true} path='/login' component={Login} />
         <Route exact={true} path='/signup' component={Signup} />
+        <Redirect to="/"/>
       </Switch>
       <SnackError />
     </ThemeProvider>
